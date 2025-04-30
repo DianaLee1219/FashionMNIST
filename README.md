@@ -4,6 +4,7 @@ Fashion MNIST is a widely used benchmark dataset for machine learning, designed 
 
 ![image](https://github.com/user-attachments/assets/5d0d0702-d6f1-4c18-8d76-04a77378d089)
 
+| --- | ----|
 | Lable | Type |
 | 0	| T-shirt/top |
 | 1	| Trouser |
