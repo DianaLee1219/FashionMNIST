@@ -58,6 +58,9 @@ Save the trained model in .h5 format for future use or deployment.
 ## Results
 The MLP model achieved a test accuracy of approximately 89–91%, depending on architecture and hyperparameters.
 
+![image](https://github.com/user-attachments/assets/938b9117-baf8-4d7c-ba32-313e64fe79a2)
+![image](https://github.com/user-attachments/assets/d117db86-5b34-4135-a376-d28d2e5d32cb)
+
 Validation accuracy and loss curves were plotted to monitor training progress.
 
 The model can accurately classify most clothing items, though some classes (e.g., shirt vs. T-shirt/top) are more challenging and may be confused more often.
@@ -65,9 +68,6 @@ The model can accurately classify most clothing items, though some classes (e.g.
 
 ## Experiments to improve the validation accuracy 
 1. Enhanced Model Architecture did not improve the validation accuracy
-
-I asked perplexity how to increase the validation accuracy, and it recommended to enhance the model architecture.
-However, the accuracy dropped as below.
 
 Changes:
 
@@ -81,12 +81,16 @@ Changes:
 
 - Higher dropout rate (0.5) to enforce robust learning.
 
-Before:
-![image](https://github.com/user-attachments/assets/938b9117-baf8-4d7c-ba32-313e64fe79a2)
-![image](https://github.com/user-attachments/assets/d117db86-5b34-4135-a376-d28d2e5d32cb)
-
-After:
 ![image](https://github.com/user-attachments/assets/381ef769-c2fb-44ba-87d4-c560c871bcf1)
 ![image](https://github.com/user-attachments/assets/94c8b7af-0aad-45dc-92c0-23d52763e21e)
+
+
+2. Use SGD with Momentum:
+
+Changes: Used SGD with Momentum instead of Adam Optimizer
+Results: the validation accuracy dropped from 89% to 85%
+
+![image](https://github.com/user-attachments/assets/a1e3097d-7dd6-4693-a5a1-73cb92fe1b6c)
+![image](https://github.com/user-attachments/assets/afeebcdc-9b9b-481a-9d3b-5074e9f25521)
 
 ## 
