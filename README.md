@@ -2,25 +2,19 @@
 What is Fashion MNIST?
 Fashion MNIST is a widely used benchmark dataset for machine learning, designed as a more challenging alternative to the original MNIST digit dataset. It consists of 70,000 grayscale images (60,000 for training, 10,000 for testing), each sized 28x28 pixels and labeled as one of 10 clothing categories:
 
-0	T-shirt/top
+![image](https://github.com/user-attachments/assets/5d0d0702-d6f1-4c18-8d76-04a77378d089)
 
-1	Trouser
-
-2	Pullover
-
-3	Dress
-
-4	Coat
-
-5	Sandal
-
-6	Shirt
-
-7	Sneaker
-
-8	Bag
-
-9	Ankle boot
+| Lable | Type |
+| 0	| T-shirt/top |
+| 1	| Trouser |
+| 2	| Pullover |
+| 3	| Dress |
+| 4	| Coat |
+| 5	| Sandal |
+| 6	| Shirt | 
+| 7 |	Sneaker |
+| 8	| Bag | 
+| 9 |	Ankle boot |
 
 The dataset is commonly used for benchmarking image classification models and is included in standard ML libraries like Keras and TensorFlow.
 
