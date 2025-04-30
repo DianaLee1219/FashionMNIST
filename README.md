@@ -5,17 +5,18 @@
 
 I asked perplexity how to increase the validation accuracy, and it recommended to enhance the model architecture.
 However, the accuracy dropped as below.
+
 Changes:
 
-Increased layer sizes (512 → 256 → 128) for better feature extraction.
+- Increased layer sizes (512 → 256 → 128) for better feature extraction.
 
-Swish activation (x⋅σ(x)x⋅σ(x)) instead of ReLU for smoother gradients.
+- Swish activation (x⋅σ(x)x⋅σ(x)) instead of ReLU for smoother gradients.
 
-Added L2 regularization (λ=0.001) to prevent overfitting.
+- Added L2 regularization (λ=0.001) to prevent overfitting.
 
-Batch normalization after each dense layer for stable training.
+- Batch normalization after each dense layer for stable training.
 
-Higher dropout rate (0.5) to enforce robust learning.
+- Higher dropout rate (0.5) to enforce robust learning.
 
 Before:
 ![image](https://github.com/user-attachments/assets/938b9117-baf8-4d7c-ba32-313e64fe79a2)
